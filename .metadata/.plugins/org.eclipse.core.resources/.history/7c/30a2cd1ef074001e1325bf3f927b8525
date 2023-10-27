@@ -1,0 +1,830 @@
+<?xml version="1.0"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:msg="http://langdale.com.au/2005/Message#"
+    xmlns:cims="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#"
+    xmlns:uml="http://langdale.com.au/2005/UML#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:j.0="http://iec.ch/TC57/CIM100#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xml:base="http://iec.ch/TC57/CIM100" > 
+  <rdf:Description rdf:about="#ACLineSegment">
+    <cims:belongsToCategory rdf:resource="#Package_Wires"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.&#xD;
+For symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.&#xD;
+The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.</rdfs:comment>
+    <rdfs:label>ACLineSegment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivityRecord">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Records activity for an entity at a point in time; activity may be for an event that has already occurred or for a planned activity.</rdfs:comment>
+    <rdfs:label>ActivityRecord</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivityRecord.createdDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Date and time this activity record has been created (different from the 'status.dateTime', which is the time of a status change of the associated object, if applicable).</rdfs:comment>
+    <rdfs:domain rdf:resource="#EndDeviceEvent"/>
+    <rdfs:label>createdDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivityRecord.reason">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Reason for event resulting in this activity record, typically supplied when user initiated.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EndDeviceEvent"/>
+    <rdfs:label>reason</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivityRecord.severity">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Severity level of event resulting in this activity record.</rdfs:comment>
+    <rdfs:domain rdf:resource="#ActivityRecord"/>
+    <rdfs:label>severity</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#ActivityRecord.type">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Type of event resulting in this activity record.</rdfs:comment>
+    <rdfs:domain rdf:resource="#FailureEvent"/>
+    <rdfs:label>type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Analog">
+    <cims:belongsToCategory rdf:resource="#Package_Meas"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Analog represents an analog Measurement.</rdfs:comment>
+    <rdfs:label>Analog</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Analog.normalValue">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Normal measurement value, e.g., used for percentage calculations.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Analog"/>
+    <rdfs:label>normalValue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AnalogValue">
+    <cims:belongsToCategory rdf:resource="#Package_Meas"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>AnalogValue represents an analog MeasurementValue.</rdfs:comment>
+    <rdfs:label>AnalogValue</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AnalogValue.Analog">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Measurement to which this value is connected.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AnalogValue"/>
+    <rdfs:label>Analog</rdfs:label>
+    <rdfs:range rdf:resource="#Analog"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#AnalogValue.value">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The value to supervise.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AnalogValue"/>
+    <rdfs:label>value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Discrete">
+    <cims:belongsToCategory rdf:resource="#Package_Meas"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Discrete represents a discrete Measurement, i.e. a Measurement representing discrete values, e.g. a Breaker position.</rdfs:comment>
+    <rdfs:label>Discrete</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Discrete.DiscreteValues">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1..n"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The values connected to this measurement.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Discrete"/>
+    <rdfs:label>DiscreteValues</rdfs:label>
+    <rdfs:range rdf:resource="#DiscreteValue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Discrete.maxValue">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Normal value range maximum for any of the MeasurementValue.values. Used for scaling, e.g. in bar graphs or of telemetered raw values.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Discrete"/>
+    <rdfs:label>maxValue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Discrete.minValue">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Normal value range minimum for any of the MeasurementValue.values. Used for scaling, e.g. in bar graphs or of telemetered raw values.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Discrete"/>
+    <rdfs:label>minValue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Discrete.normalValue">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Normal measurement value, e.g., used for percentage calculations.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Discrete"/>
+    <rdfs:label>normalValue</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DiscreteValue">
+    <cims:belongsToCategory rdf:resource="#Package_Meas"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>DiscreteValue represents a discrete MeasurementValue.</rdfs:comment>
+    <rdfs:label>DiscreteValue</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#DiscreteValue.value">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The value to supervise.</rdfs:comment>
+    <rdfs:domain rdf:resource="#DiscreteValue"/>
+    <rdfs:label>value</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Parent class for different groupings of information collected and managed as a part of a business process. It will frequently contain references to other objects, such as assets, people and power system resources.</rdfs:comment>
+    <rdfs:label>Document</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.createdDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Date and time that this document was created.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>createdDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.lastModifiedDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Date and time this document was last modified. Documents may potentially be modified many times during their lifetime.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>lastModifiedDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.status">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Status of subject matter (e.g., Agreement, Work) this document represents. For status of the document itself, use 'docStatus' attribute.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>status</rdfs:label>
+    <rdfs:range rdf:resource="#Status"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.subject">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Document subject.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:label>subject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.title">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Document title.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:label>title</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Document.type">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</rdfs:comment>
+    <rdfs:domain rdf:resource="#Document"/>
+    <rdfs:label>type</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EndDevice">
+    <cims:belongsToCategory rdf:resource="#Package_Metering"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Asset container that performs one or more end device functions. One type of end device is a meter which can perform metering, load management, connect/disconnect, accounting functions, etc. Some end devices, such as ones monitoring and controlling air conditioners, refrigerators, pool pumps may be connected to a meter. All end devices may have communication capability defined by the associated communication function(s). An end device may be owned by a consumer, a service provider, utility or otherwise.&#xD;
+There may be a related end device function that identifies a sensor or control point within a metering application or communications systems (e.g., water, gas, electricity).&#xD;
+Some devices may use an optical port that conforms to the ANSI C12.18 standard for communications.</rdfs:comment>
+    <rdfs:label>EndDevice</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EndDeviceEvent">
+    <cims:belongsToCategory rdf:resource="#Package_Metering"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Event detected by a device function associated with the end device.</rdfs:comment>
+    <rdfs:label>EndDeviceEvent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ActivityRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EndDeviceEvent.EndDevice">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>End device that reported this end device event.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EndDeviceEvent"/>
+    <rdfs:label>EndDevice</rdfs:label>
+    <rdfs:range rdf:resource="#EndDevice"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Equipment">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The parts of a power system that are physical devices, electronic or mechanical.</rdfs:comment>
+    <rdfs:label>Equipment</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquipmentFault">
+    <cims:belongsToCategory rdf:resource="#Package_Faults"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment.</rdfs:comment>
+    <rdfs:label>EquipmentFault</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Fault"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#EquipmentFault.Terminal">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The terminal connecting to the bus to which the fault is applied.</rdfs:comment>
+    <rdfs:domain rdf:resource="#EquipmentFault"/>
+    <rdfs:label>Terminal</rdfs:label>
+    <rdfs:range rdf:resource="#Terminal"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FailureEvent">
+    <cims:belongsToCategory rdf:resource="#Package_Assets"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>An event where an asset has failed to perform its functions within specified parameters. This class is intended to reflect the failure itself. Additional information resulting from forensic analysis could be captured by a diagnosis data set.</rdfs:comment>
+    <rdfs:label>FailureEvent</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#ActivityRecord"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FailureEvent.location">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Failure location on an object.</rdfs:comment>
+    <rdfs:domain rdf:resource="#FailureEvent"/>
+    <rdfs:label>location</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FailureEvent.rootCause">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Root cause of asset failure.</rdfs:comment>
+    <rdfs:domain rdf:resource="#FailureEvent"/>
+    <rdfs:label>rootCause</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault">
+    <cims:belongsToCategory rdf:resource="#Package_Faults"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line).</rdfs:comment>
+    <rdfs:label>Fault</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.FaultCauseTypes">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1..n"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>All types of fault cause.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>FaultCauseTypes</rdfs:label>
+    <rdfs:range rdf:resource="#FaultCauseType"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.FaultyEquipment">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Equipment carrying this fault.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>FaultyEquipment</rdfs:label>
+    <rdfs:range rdf:resource="#Equipment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.Location">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:range rdf:resource="#Location"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.Outage">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Outage associated with this fault.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>Outage</rdfs:label>
+    <rdfs:range rdf:resource="#Outage"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.occurredDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The date and time at which the fault occurred.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>occurredDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Fault.phases">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The phases participating in the fault. The fault connections into these phases are further specified by the type of fault.</rdfs:comment>
+    <rdfs:domain rdf:resource="#Fault"/>
+    <rdfs:label>phases</rdfs:label>
+    <rdfs:range rdf:resource="#PhaseCode"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#FaultCauseType">
+    <cims:belongsToCategory rdf:resource="#Package_Faults"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Type of cause of the fault.</rdfs:comment>
+    <rdfs:label>FaultCauseType</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IOPoint.IOPointSource">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Local merasurement value source for an ICCP point.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AnalogValue"/>
+    <rdfs:label>IOPointSource</rdfs:label>
+    <rdfs:range rdf:resource="#IOPointSource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IOPointSource">
+    <cims:belongsToCategory rdf:resource="#Package_ICCPConfiguration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Indicates the point source for an IO Point.</rdfs:comment>
+    <rdfs:label>IOPointSource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#MeasurementValueSource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>This is a root class to provide common identification for all classes needing identification and naming attributes.</rdfs:comment>
+    <rdfs:label>IdentifiedObject</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.description">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingAction"/>
+    <rdfs:label>description</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.mRID">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.&#xD;
+For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</rdfs:comment>
+    <rdfs:domain rdf:resource="#IdentifiedObject"/>
+    <rdfs:label>mRID</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#IdentifiedObject.name">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:0..1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>NOTE: Pat inadvertently deleted and then recreated this attribute.</rdfs:comment>
+    <rdfs:domain rdf:resource="#IdentifiedObject"/>
+    <rdfs:label>name</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Length">
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Unit of length. It shall be a positive value or zero.</rdfs:comment>
+    <rdfs:label>Length</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LineFault">
+    <cims:belongsToCategory rdf:resource="#Package_Faults"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A fault that occurs on an AC line segment at some point along the length.</rdfs:comment>
+    <rdfs:label>LineFault</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Fault"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LineFault.ACLineSegment">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The line segment of this line fault.</rdfs:comment>
+    <rdfs:domain rdf:resource="#LineFault"/>
+    <rdfs:label>ACLineSegment</rdfs:label>
+    <rdfs:range rdf:resource="#ACLineSegment"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#LineFault.lengthFromTerminal1">
+    <cims:dataType rdf:resource="#Length"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment.</rdfs:comment>
+    <rdfs:domain rdf:resource="#LineFault"/>
+    <rdfs:label>lengthFromTerminal1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Location">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>The place, scene, or point of something where someone or something has been, is, and/or will be at a given moment in time. It can be defined with one or more position points (coordinates) in a given coordinate system.</rdfs:comment>
+    <rdfs:label>Location</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MeasurementValue.MeasurementValueSource">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AnalogValue"/>
+    <rdfs:label>MeasurementValueSource</rdfs:label>
+    <rdfs:range rdf:resource="#MeasurementValueSource"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MeasurementValue.timeStamp">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The time when the value was last updated.</rdfs:comment>
+    <rdfs:domain rdf:resource="#AnalogValue"/>
+    <rdfs:label>timeStamp</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#MeasurementValueSource">
+    <cims:belongsToCategory rdf:resource="#Package_Meas"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>MeasurementValueSource describes the alternative sources updating a MeasurementValue. User conventions for how to use the MeasurementValueSource attributes are defined in IEC 61970-301.</rdfs:comment>
+    <rdfs:label>MeasurementValueSource</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Outage">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Document describing details of an active or planned outage in a part of the electrical network.&#xD;
+A non-planned outage may be created upon:&#xD;
+- a breaker trip,&#xD;
+- a fault indicator status change,&#xD;
+- a meter event indicating customer outage,&#xD;
+- a reception of one or more customer trouble calls, or&#xD;
+- an operator command, reflecting information obtained from the field crew.&#xD;
+Outage restoration may be performed using a switching plan which complements the outage information with detailed switching activities, including the relationship to the crew and work.&#xD;
+A planned outage may be created upon:&#xD;
+- a request for service, maintenance or construction work in the field, or&#xD;
+- an operator-defined outage for what-if/contingency network analysis.</rdfs:comment>
+    <rdfs:label>Outage</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#OutagePlan">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Document containing the definition of planned outages of equipment and/or usage points. It will reference switching plans that are used to execute the planned outage.</rdfs:comment>
+    <rdfs:label>OutagePlan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Assets">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61968"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>This package contains the core information classes that support asset management applications that deal with the physical and lifecycle aspects of various network resources (as opposed to power system resource models defined in IEC61970::Wires package, which support network applications).</rdfs:comment>
+    <rdfs:label>Assets</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Base">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61970"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>Content of the base CIM published as IEC 61970-301.</rdfs:comment>
+    <rdfs:label>Base</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Common">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61968"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>This package contains the information classes that support distribution management in general.</rdfs:comment>
+    <rdfs:label>Common</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Core">
+    <cims:belongsToCategory rdf:resource="#Package_Base"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>Contains the core PowerSystemResource and ConductingEquipment entities shared by all applications plus common collections of those entities. Not all applications require all the Core entities.  This package does not depend on any other package except the Domain package, but most of the other packages have associations and generalizations that depend on it.</rdfs:comment>
+    <rdfs:label>Core</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Faults">
+    <cims:belongsToCategory rdf:resource="#Package_Base"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>The package describes faults that may happen to conducting equipment, e.g. tree falling on a power line.</rdfs:comment>
+    <rdfs:label>Faults</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_ICCPConfiguration">
+    <cims:belongsToCategory rdf:resource="#Package_Base"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>This package models configuration of ICCP required for bilateral exchanges.</rdfs:comment>
+    <rdfs:label>ICCPConfiguration</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_IEC61968">
+    <cims:belongsToCategory rdf:resource="#Package_TC57CIM"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>The IEC 61968 subpackages of the CIM are developed, standardized and maintained by IEC TC57 Working Group 14: interfaces for distribution management (WG14).&#xD;
+Currently, normative parts of the model support the needs of information exchange defined in IEC 61968-3, IEC 61968-4, IEC 61968-9 and in IEC 61968-13.</rdfs:comment>
+    <rdfs:label>IEC61968</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_IEC61970">
+    <cims:belongsToCategory rdf:resource="#Package_TC57CIM"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>Top package for IEC 61970.</rdfs:comment>
+    <rdfs:label>IEC61970</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Meas">
+    <cims:belongsToCategory rdf:resource="#Package_Base"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>Contains entities that describe dynamic measurement data exchanged between applications.</rdfs:comment>
+    <rdfs:label>Meas</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Metering">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61968"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>This package contains the core information classes that support end device applications with specialized classes for metering and premises area network devices, and remote reading functions. These classes are generally associated with the point where a service is delivered to the customer.</rdfs:comment>
+    <rdfs:label>Metering</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Operations">
+    <cims:belongsToCategory rdf:resource="#Package_IEC61968"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>This package contains the core information classes that support operations and outage management applications.</rdfs:comment>
+    <rdfs:label>Operations</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_TC57CIM">
+    <cims:belongsToCategory rdf:resource="http://langdale.com.au/2005/UML#global_package"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>Top package for IEC TC57 CIM.</rdfs:comment>
+    <rdfs:label>TC57CIM</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Package_Wires">
+    <cims:belongsToCategory rdf:resource="#Package_Base"/>
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:comment>An extension to the Core and Topology package that models information on the electrical characteristics of Transmission and Distribution networks. This package is used by network applications such as State Estimation, Load Flow and Optimal Power Flow.</rdfs:comment>
+    <rdfs:label>Wires</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#enumeration"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>An unordered enumeration of phase identifiers.  Allows designation of phases for both transmission and distribution equipment, circuits and loads.   The enumeration, by itself, does not describe how the phases are connected together or connected to ground.  Ground is not explicitly denoted as a phase.&#xD;
+Residential and small commercial loads are often served from single-phase, or split-phase, secondary circuits. For the example of s12N, phases 1 and 2 refer to hot wires that are 180 degrees out of phase, while N refers to the neutral wire. Through single-phase transformer connections, these secondary circuits may be served from one or two of the primary phases A, B, and C. For three-phase loads, use the A, B, C phase codes instead of s12N.&#xD;
+The integer values are from IEC 61968-9 to support revenue metering applications.</rdfs:comment>
+    <rdfs:label>PhaseCode</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.A">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phase A.</rdfs:comment>
+    <rdfs:label>A</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AB">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A and B.</rdfs:comment>
+    <rdfs:label>AB</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABC">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A, B, and C.</rdfs:comment>
+    <rdfs:label>ABC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABCN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A, B, C, and N.</rdfs:comment>
+    <rdfs:label>ABCN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ABN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A, B, and neutral.</rdfs:comment>
+    <rdfs:label>ABN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AC">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A and C.</rdfs:comment>
+    <rdfs:label>AC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.ACN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A, C and neutral.</rdfs:comment>
+    <rdfs:label>ACN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.AN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases A and neutral.</rdfs:comment>
+    <rdfs:label>AN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.B">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phase B.</rdfs:comment>
+    <rdfs:label>B</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BC">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases B and C.</rdfs:comment>
+    <rdfs:label>BC</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BCN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases B, C, and neutral.</rdfs:comment>
+    <rdfs:label>BCN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.BN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases B and neutral.</rdfs:comment>
+    <rdfs:label>BN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.C">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phase C.</rdfs:comment>
+    <rdfs:label>C</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.CN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Phases C and neutral.</rdfs:comment>
+    <rdfs:label>CN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.N">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Neutral phase.</rdfs:comment>
+    <rdfs:label>N</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.X">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Unknown non-neutral phase.</rdfs:comment>
+    <rdfs:label>X</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.XN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Unknown non-neutral phase plus neutral.</rdfs:comment>
+    <rdfs:label>XN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.XY">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Two unknown non-neutral phases.</rdfs:comment>
+    <rdfs:label>XY</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.XYN">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Two unknown non-neutral phases plus neutral.</rdfs:comment>
+    <rdfs:label>XYN</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.none">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>No phases specified.</rdfs:comment>
+    <rdfs:label>none</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s1">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phase 1.</rdfs:comment>
+    <rdfs:label>s1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s12">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phase 1 and 2.</rdfs:comment>
+    <rdfs:label>s12</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s12N">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phases 1, 2, and neutral.</rdfs:comment>
+    <rdfs:label>s12N</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s1N">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phase 1 and neutral.</rdfs:comment>
+    <rdfs:label>s1N</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s2">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phase 2.</rdfs:comment>
+    <rdfs:label>s2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#PhaseCode.s2N">
+    <rdf:type rdf:resource="#PhaseCode"/>
+    <rdfs:comment>Secondary phase 2 and neutral.</rdfs:comment>
+    <rdfs:label>s2N</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Status">
+    <cims:belongsToCategory rdf:resource="#Package_Common"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#compound"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Current status information relevant to an entity.</rdfs:comment>
+    <rdfs:label>Status</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingAction">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Atomic switching action.</rdfs:comment>
+    <rdfs:label>SwitchingAction</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingAction.executedDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Actual date and time of this switching step.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingAction"/>
+    <rdfs:label>executedDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingAction.issuedDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Date and time when the crew was given the instruction to execute the action; not applicable if the action is performed by operator remote control.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingAction"/>
+    <rdfs:label>issuedDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingOrder">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>Transmits a switching plan to a crew in order for the plan to be executed.</rdfs:comment>
+    <rdfs:label>SwitchingOrder</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingOrder.comment">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Free-form comment associated with the switching order.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingOrder"/>
+    <rdfs:label>comment</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlan">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A sequence of grouped or atomic steps intended to:&#xD;
+- de-energise equipment or part of the network for safe work, and/or&#xD;
+- bring back in service previously de-energised equipment or part of the network.</rdfs:comment>
+    <rdfs:label>SwitchingPlan</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlan.SwitchingAction">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1..n"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>SwitchingAction</rdfs:label>
+    <rdfs:range rdf:resource="#SwitchingAction"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlan.approvedDateTime">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>The date and time the switching plan was approved</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>approvedDateTime</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlan.purpose">
+    <cims:dataType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#attribute"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:comment>Purpose of  this plan, such as whether it is to move the state from normal to some abnormal condition, or to restore the normal state after an abnormal condition, or to perform some kind of optimisation such as correction of overload, voltage control, etc.</rdfs:comment>
+    <rdfs:domain rdf:resource="#SwitchingPlan"/>
+    <rdfs:label>purpose</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlanRequest">
+    <cims:belongsToCategory rdf:resource="#Package_Operations"/>
+    <cims:stereotype rdf:resource="http://langdale.com.au/2005/UML#concrete"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>A document used to request that a switching plan be created for a particular purpose.</rdfs:comment>
+    <rdfs:label>SwitchingPlanRequest</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#SwitchingPlanRequest.SwitchingPlan">
+    <cims:multiplicity rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#M:1..n"/>
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <rdfs:domain rdf:resource="#SwitchingPlanRequest"/>
+    <rdfs:label>SwitchingPlan</rdfs:label>
+    <rdfs:range rdf:resource="#SwitchingPlan"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="#Terminal">
+    <cims:belongsToCategory rdf:resource="#Package_Core"/>
+    <rdf:type rdf:resource="http://www.w3.org/2000/01/rdf-schema#Class"/>
+    <rdfs:comment>An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.</rdfs:comment>
+    <rdfs:label>Terminal</rdfs:label>
+    <rdfs:subClassOf rdf:resource="#IdentifiedObject"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://langdale.com.au/2005/UML#global_package">
+    <rdf:type rdf:resource="http://iec.ch/TC57/1999/rdf-schema-extensions-19990926#ClassCategory"/>
+    <rdfs:label>Global</rdfs:label>
+  </rdf:Description>
+</rdf:RDF>

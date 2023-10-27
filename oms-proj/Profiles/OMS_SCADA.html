@@ -1,0 +1,1568 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:a="http://langdale.com.au/2005/Message#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <title>Profile Documentation</title>
+      <style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+   </head>
+   <body>
+      <h1>Profile Documentation</h1>
+      <p/>
+      <p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://pea.co.th/cimpf/OMS_SCADA/2023#</span>
+      </p>
+      <h1>Concrete Classes</h1>
+      <div id="AnalogValue" class="group">
+         <a href="#AnalogValue">
+            <h2 class="concrete">AnalogValue</h2>
+         </a>
+         <p class="package">Meas</p>
+         <p class="comment">AnalogValue represents an analog MeasurementValue.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.timeStamp">timeStamp</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The time when the value was last updated.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.value">value</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">float</p>
+               </td>
+               <td>
+                  <p class="comment">The value to supervise.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.Analog">Analog</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Analog">Analog</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Measurement to which this value is connected.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.IOPointSource">IOPointSource</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#IOPointSource">IOPointSource</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Local merasurement value source for an ICCP point.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="AnalogValue.MeasurementValueSource">MeasurementValueSource</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#MeasurementValueSource">MeasurementValueSource</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">A reference to the type of source that updates the MeasurementValue, e.g. SCADA, CCLink, manual, etc. User conventions for the names of sources are contained in the introduction to IEC 61970-301.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="Discrete" class="group">
+         <a href="#Discrete">
+            <h2 class="concrete">Discrete</h2>
+         </a>
+         <p class="package">Meas</p>
+         <p class="comment">Discrete represents a discrete Measurement, i.e. a Measurement representing discrete values, e.g. a Breaker position.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Discrete.maxValue">maxValue</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">integer</p>
+               </td>
+               <td>
+                  <p class="comment">Normal value range maximum for any of the MeasurementValue.values. Used for scaling, e.g. in bar graphs or of telemetered raw values.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Discrete.minValue">minValue</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">integer</p>
+               </td>
+               <td>
+                  <p class="comment">Normal value range minimum for any of the MeasurementValue.values. Used for scaling, e.g. in bar graphs or of telemetered raw values.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Discrete.normalValue">normalValue</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">integer</p>
+               </td>
+               <td>
+                  <p class="comment">Normal measurement value, e.g., used for percentage calculations.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Discrete.DiscreteValues">DiscreteValues</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#DiscreteValue">DiscreteValue</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The values connected to this measurement.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="DiscreteValue" class="group">
+         <a href="#DiscreteValue">
+            <h2 class="concrete">DiscreteValue</h2>
+         </a>
+         <p class="package">Meas</p>
+         <p class="comment">DiscreteValue represents a discrete MeasurementValue.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="DiscreteValue.value">value</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">integer</p>
+               </td>
+               <td>
+                  <p class="comment">The value to supervise.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="EndDeviceEvent" class="group">
+         <a href="#EndDeviceEvent">
+            <h2 class="concrete">EndDeviceEvent</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Event detected by a device function associated with the end device.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.createdDateTime">createdDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and time this activity record has been created (different from the 'status.dateTime', which is the time of a status change of the associated object, if applicable).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.reason">reason</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Reason for event resulting in this activity record, typically supplied when user initiated.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.severity">severity</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Severity level of event resulting in this activity record.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.EndDevice">EndDevice</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EndDevice">EndDevice</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">End device that reported this end device event.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="EquipmentFault" class="group">
+         <a href="#EquipmentFault">
+            <h2 class="concrete">EquipmentFault</h2>
+         </a>
+         <p class="package">Faults</p>
+         <p class="comment">A fault applied at the terminal, external to the equipment. This class is not used to specify faults internal to the equipment.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.FaultCauseTypes">FaultCauseTypes</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#FaultCauseType">FaultCauseType</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All types of fault cause.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.FaultyEquipment">FaultyEquipment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Equipment carrying this fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.Outage">Outage</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Outage">Outage</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Outage associated with this fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EquipmentFault.Terminal">Terminal</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Terminal">Terminal</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The terminal connecting to the bus to which the fault is applied.</p>
+               </td>
+            </tr>
+         </table>
+         <h3>Inherited Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.mRID">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.name">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">occurredDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.occurredDateTime">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">phases</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PhaseCode">PhaseCode</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.phases">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">FaultCauseTypes</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..unbounded</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#FaultCauseType">FaultCauseType</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.FaultCauseTypes">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">FaultyEquipment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.FaultyEquipment">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">Location</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Location">Location</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.Location">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">Outage</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Outage">Outage</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.Outage">Fault</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="FailureEvent" class="group">
+         <a href="#FailureEvent">
+            <h2 class="concrete">FailureEvent</h2>
+         </a>
+         <p class="package">Assets</p>
+         <p class="comment">An event where an asset has failed to perform its functions within specified parameters. This class is intended to reflect the failure itself. Additional information resulting from forensic analysis could be captured by a diagnosis data set.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.location">location</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Failure location on an object.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.rootCause">rootCause</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Root cause of asset failure.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.severity">severity</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Severity level of event resulting in this activity record.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FailureEvent.type">type</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Type of event resulting in this activity record.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="Fault" class="group">
+         <a href="#Fault">
+            <h2 class="concrete">Fault</h2>
+         </a>
+         <p class="package">Faults</p>
+         <p class="comment">Abnormal condition causing current flow through conducting equipment, such as caused by equipment failure or short circuits from objects not typically modelled (for example, a tree falling on a line).</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.occurredDateTime">occurredDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The date and time at which the fault occurred.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.phases">phases</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PhaseCode">PhaseCode</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The phases participating in the fault. The fault connections into these phases are further specified by the type of fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.FaultCauseTypes">FaultCauseTypes</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#FaultCauseType">FaultCauseType</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All types of fault cause.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.FaultyEquipment">FaultyEquipment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Equipment carrying this fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.Location">Location</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Location">Location</a>
+                  </p>
+               </td>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Fault.Outage">Outage</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Outage">Outage</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Outage associated with this fault.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="FaultCauseType" class="group">
+         <a href="#FaultCauseType">
+            <h2 class="concrete">FaultCauseType</h2>
+         </a>
+         <p class="package">Faults</p>
+         <p class="comment">Type of cause of the fault.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="FaultCauseType.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="FaultCauseType.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="LineFault" class="group">
+         <a href="#LineFault">
+            <h2 class="concrete">LineFault</h2>
+         </a>
+         <p class="package">Faults</p>
+         <p class="comment">A fault that occurs on an AC line segment at some point along the length.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.lengthFromTerminal1">lengthFromTerminal1</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Length">Length</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The length to the place where the fault is located starting from terminal with sequence number 1 of the faulted line segment.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.occurredDateTime">occurredDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The date and time at which the fault occurred.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.phases">phases</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PhaseCode">PhaseCode</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The phases participating in the fault. The fault connections into these phases are further specified by the type of fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.ACLineSegment">ACLineSegment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#ACLineSegment">ACLineSegment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The line segment of this line fault.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="LineFault.FaultCauseTypes">FaultCauseTypes</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#FaultCauseType">FaultCauseType</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All types of fault cause.</p>
+               </td>
+            </tr>
+         </table>
+         <h3>Inherited Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.mRID">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.name">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">occurredDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.occurredDateTime">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">phases</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PhaseCode">PhaseCode</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.phases">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">FaultCauseTypes</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..unbounded</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#FaultCauseType">FaultCauseType</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.FaultCauseTypes">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">FaultyEquipment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.FaultyEquipment">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">Location</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Location">Location</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.Location">Fault</a>
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">Outage</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Outage">Outage</a>
+                  </p>
+               </td>
+               <td>
+                  <p>see <a class="superclass" href="#Fault.Outage">Fault</a>
+                  </p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="OutagePlan" class="group">
+         <a href="#OutagePlan">
+            <h2 class="concrete">OutagePlan</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">Document containing the definition of planned outages of equipment and/or usage points. It will reference switching plans that are used to execute the planned outage.</p>
+      </div>
+      <div id="SwitchingAction" class="group">
+         <a href="#SwitchingAction">
+            <h2 class="concrete">SwitchingAction</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">Atomic switching action.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingAction.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingAction.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingAction.executedDateTime">executedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Actual date and time of this switching step.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingAction.issuedDateTime">issuedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and time when the crew was given the instruction to execute the action; not applicable if the action is performed by operator remote control.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingAction.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="SwitchingOrder" class="group">
+         <a href="#SwitchingOrder">
+            <h2 class="concrete">SwitchingOrder</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">Transmits a switching plan to a crew in order for the plan to be executed.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingOrder.comment">comment</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Free-form comment associated with the switching order.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingOrder.subject">subject</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document subject.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingOrder.title">title</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document title.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingOrder.type">type</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="SwitchingPlan" class="group">
+         <a href="#SwitchingPlan">
+            <h2 class="concrete">SwitchingPlan</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">A sequence of grouped or atomic steps intended to:</p>
+         <p class="comment">- de-energise equipment or part of the network for safe work, and/or</p>
+         <p class="comment">- bring back in service previously de-energised equipment or part of the network.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.approvedDateTime">approvedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The date and time the switching plan was approved</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.createdDateTime">createdDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and time that this document was created.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.lastModifiedDateTime">lastModifiedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and time this document was last modified. Documents may potentially be modified many times during their lifetime.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.purpose">purpose</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Purpose of  this plan, such as whether it is to move the state from normal to some abnormal condition, or to restore the normal state after an abnormal condition, or to perform some kind of optimisation such as correction of overload, voltage control, etc.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.subject">subject</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document subject.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.title">title</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document title.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.type">type</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.status">status</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Status">Status</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Status of subject matter (e.g., Agreement, Work) this document represents. For status of the document itself, use 'docStatus' attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlan.SwitchingAction">SwitchingAction</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#SwitchingAction">SwitchingAction</a>
+                  </p>
+               </td>
+               <td/>
+            </tr>
+         </table>
+      </div>
+      <div id="SwitchingPlanRequest" class="group">
+         <a href="#SwitchingPlanRequest">
+            <h2 class="concrete">SwitchingPlanRequest</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">A document used to request that a switching plan be created for a particular purpose.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlanRequest.subject">subject</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document subject.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlanRequest.title">title</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document title.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlanRequest.type">type</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="SwitchingPlanRequest.SwitchingPlan">SwitchingPlan</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#SwitchingPlan">SwitchingPlan</a>
+                  </p>
+               </td>
+               <td/>
+            </tr>
+         </table>
+      </div>
+      <h1>Abstract Classes</h1>
+      <div id="Analog" class="group">
+         <a href="#Analog">
+            <h2 class="abstract">Analog</h2>
+         </a>
+         <p class="package">Meas</p>
+         <p class="comment">Analog represents an analog Measurement.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Analog.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Analog.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Analog.normalValue">normalValue</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">float</p>
+               </td>
+               <td>
+                  <p class="comment">Normal measurement value, e.g., used for percentage calculations.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <h1>Enumerations</h1>
+      <h1>Compound Types</h1>
+      <h1>Datatypes</h1>
+      <div id="Length" class="group">
+         <a href="#Length">
+            <h2 class="domain">Length</h2>
+         </a>
+         <p class="package"/>
+         <p class="comment">Unit of length. It shall be a positive value or zero.</p>
+         <p class="declaration">XSD type: <span class="xsdtype">float</span>
+         </p>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,1640 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033\fs20{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset0{\*\fname Arial;}Arial CE;}
+{\f23\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Arial;}}{\colortbl;\red0\green0\blue238;}
+\pard\plain \sb120\qj\fs20\lang1033
+{\par\b\fs28OMS_SAP Profile\par}Profile namespace:  http://pea.co.th/cimpf/OMS_SAP/2023# 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs28 Concrete Classes \par}
+
+{\par\b\fs24 {\*\bkmkstart Crew}Crew}{\fs24 {\*\bkmkend Crew}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Group of people with specific skills, tools, and vehicles.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 CrewMembers \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "CrewMember"}}{\fldrslt {\fs16\ul\cf1 CrewMember}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All members of this crew.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 CrewType \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "CrewType"}}{\fldrslt {\fs16\ul\cf1 CrewType}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Type of this crew.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart OperationPersonRole}OperationPersonRole}{\fs24 {\*\bkmkend OperationPersonRole}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Person role in the context of utility operations.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Person}Person}{\fs24 {\*\bkmkend Person}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 General purpose information for name and other information to contact people.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 firstName \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Person's first name.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 lastName \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Person's last (family, sir) name.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mName \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Middle name(s) or initial(s).}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 prefix \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 A prefix or title for the person's name, such as Miss, Mister, Doctor, etc.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 electronicAddress \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ElectronicAddress"}}{\fldrslt {\fs16\ul\cf1 ElectronicAddress}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Electronic address.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 landlinePhone \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "TelephoneNumber"}}{\fldrslt {\fs16\ul\cf1 TelephoneNumber}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Landline phone number.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mobilePhone \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "TelephoneNumber"}}{\fldrslt {\fs16\ul\cf1 TelephoneNumber}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Mobile phone number.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Roles \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All roles of this person.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart PersonRole}PersonRole}{\fs24 {\*\bkmkend PersonRole}}
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Tool}Tool}{\fs24 {\*\bkmkend Tool}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Tool asset.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 kind \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "AssetKind"}}{\fldrslt {\fs16\ul\cf1 AssetKind}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Kind of asset. Used in description of asset components in asset instance templates.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 status \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Status"}}{\fldrslt {\fs16\ul\cf1 Status}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Status of this asset.}
+ \cell}
+\row
+}
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Vehicle}Vehicle}{\fs24 {\*\bkmkend Vehicle}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Vehicle asset.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 usageKind \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "VehicleUsageKind"}}{\fldrslt {\fs16\ul\cf1 VehicleUsageKind}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Kind of usage of the vehicle.}
+ \cell}
+\row
+}
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkAsset"}}{\fldrslt {\fs16\ul\cf1 WorkAsset}}} \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart WorkActivityRecord}WorkActivityRecord}{\fs24 {\*\bkmkend WorkActivityRecord}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Records information about the status of work or work task at a point in time.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 createdDateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Date and time this activity record has been created (different from the 'status.dateTime', which is the time of a status change of the associated object, if applicable).}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 percentComplete \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PerCent"}}{\fldrslt {\fs16\ul\cf1 PerCent}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Estimated percentage of completion of this individual work task or overall work order.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 reason \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Reason for event resulting in this activity record, typically supplied when user initiated.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 severity \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Severity level of event resulting in this activity record.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart WorkAsset}WorkAsset}{\fs24 {\*\bkmkend WorkAsset}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Asset used to perform work.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart WorkTask}WorkTask}{\fs24 {\*\bkmkend WorkTask}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A task within a set of work.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 completedDateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Date and time work task was completed.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 estimatedCompletionTime \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Time and Date when the work task will be completed.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 kind \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkKind"}}{\fldrslt {\fs16\ul\cf1 WorkKind}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Kind of work.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 laborCost \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Money"}}{\fldrslt {\fs16\ul\cf1 Money}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Total labor costs associated with the work task.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 laborHours \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Hours"}}{\fldrslt {\fs16\ul\cf1 Hours}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Hours of labor expended under work task.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 materiallCost \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Money"}}{\fldrslt {\fs16\ul\cf1 Money}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Total material costs associated with the work task.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 startedDateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Date and time work task was started.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 statusKind \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkStatusKind"}}{\fldrslt {\fs16\ul\cf1 WorkStatusKind}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Kind of work status.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 subject \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Document subject.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 taskKind \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "WorkTaskKind"}}{\fldrslt {\fs16\ul\cf1 WorkTaskKind}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Kind of work.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 title \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Document title.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 type \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart WorkTimeSchedule}WorkTimeSchedule}{\fs24 {\*\bkmkend WorkTimeSchedule}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Time schedule specific to work.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 subject \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Document subject.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 title \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Document title.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 type \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 docStatus \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Status"}}{\fldrslt {\fs16\ul\cf1 Status}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Status of this document. For status of subject matter this document represents (e.g., Agreement, Work), use 'status' attribute.}
+
+{\sb120\sa120 Example values for 'docStatus.status' are draft, approved, cancelled, etc.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 scheduleInterval \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "DateTimeInterval"}}{\fldrslt {\fs16\ul\cf1 DateTimeInterval}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Schedule date and time interval.}
+ \cell}
+\row
+}
+
+{\par\b\fs28 Abstract Classes \par}
+
+{\par\b\fs24 {\*\bkmkstart CrewMember}CrewMember}{\fs32 {\*\bkmkend CrewMember}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Member of a crew.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PersonRole"}}{\fldrslt {\fs16\ul\cf1 PersonRole}}} \cell}
+\row
+}
+
+{\par\b\fs28 Compound Types \par}
+
+{\par\b\fs24 {\*\bkmkstart DateTimeInterval}DateTimeInterval}{\fs32 {\*\bkmkend DateTimeInterval}}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 Interval between two date and time points, where the interval includes the start time but excludes end time.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 end \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 End date and time of this interval.  The end date and time where the interval is defined up to, but excluded.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 start \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 dateTime \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Start date and time of this interval.  The start date and time is included in the defined interval.}
+ \cell}
+\row
+}
+
+{\par\b\fs28 Datatypes \par}
+
+{\par\b\fs24 {\*\bkmkstart Hours}Hours}{\fs32 {\*\bkmkend Hours} \par}
+Time specified in hours.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart Money}Money}{\fs32 {\*\bkmkend Money} \par}
+Amount of money.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: decimal 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart PerCent}PerCent}{\fs32 {\*\bkmkend PerCent} \par}
+Percentage on a defined base.   For example, specify as 100 to indicate at the defined base.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+\par}}}}}}}}

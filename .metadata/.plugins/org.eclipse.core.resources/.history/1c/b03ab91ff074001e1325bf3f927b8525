@@ -1,0 +1,1671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:a="http://langdale.com.au/2005/Message#"
+      xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <title>Profile Documentation</title>
+      <style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+   </head>
+   <body>
+      <h1>Profile Documentation</h1>
+      <p/>
+      <p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://pea.co.th/cimpf/OMS_AMI/2023#</span>
+      </p>
+      <h1>Concrete Classes</h1>
+      <div id="EndDeviceEvent" class="group">
+         <a href="#EndDeviceEvent">
+            <h2 class="concrete">EndDeviceEvent</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Event detected by a device function associated with the end device.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.createdDateTime">createdDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and time this activity record has been created (different from the 'status.dateTime', which is the time of a status change of the associated object, if applicable).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.issuerID">issuerID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Unique identifier of the business entity originating an end device control.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.reason">reason</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Reason for event resulting in this activity record, typically supplied when user initiated.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.severity">severity</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Severity level of event resulting in this activity record.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.EndDevice">EndDevice</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EndDevice">EndDevice</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">End device that reported this end device event.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.EndDeviceEventType">EndDeviceEventType</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#EndDeviceEventType">EndDeviceEventType</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Type of this end device event.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="EndDeviceEvent.UsagePoint">UsagePoint</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#UsagePoint">UsagePoint</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Usage point for which this end device event is reported.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="Meter" class="group">
+         <a href="#Meter">
+            <h2 class="concrete">Meter</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Physical asset that performs the metering role of the usage point. Used for measuring consumption and detection of events.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Meter.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Meter.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Meter.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="OutageArea" class="group">
+         <a href="#OutageArea">
+            <h2 class="concrete">OutageArea</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">This defines the area covered by the Outage.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="OutageArea.earliestReportedTime">earliestReportedTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">This is the reported time of the first outage report</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutageArea.metersServed">metersServed</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">integer</p>
+               </td>
+               <td>
+                  <p class="comment">defines the number of meters served in the defined area.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutageArea.outageAreaKind">outageAreaKind</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#AreaKind">AreaKind</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">defines the type of area that has the outage - county, state, zipcode, etc.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="OutageOrder" class="group">
+         <a href="#OutageOrder">
+            <h2 class="concrete">OutageOrder</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">Transmits an outage plan to a crew in order for the planned outage to be executed.</p>
+      </div>
+      <div id="OutagePlan" class="group">
+         <a href="#OutagePlan">
+            <h2 class="concrete">OutagePlan</h2>
+         </a>
+         <p class="package">Operations</p>
+         <p class="comment">Document containing the definition of planned outages of equipment and/or usage points. It will reference switching plans that are used to execute the planned outage.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.approvedDateTime">approvedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The date and time the outage plan was approved</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.cancelledDateTime">cancelledDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">Date and Time the planned outage was canceled.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.purpose">purpose</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Purpose of  this outage plan, such as whether it is to replace equipment or perform maintenance or repairs or to reconfigure network topology.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.subject">subject</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document subject.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.title">title</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Document title.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.type">type</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Utility-specific classification of this document, according to its corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.OutageOrder">OutageOrder</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#OutageOrder">OutageOrder</a>
+                  </p>
+               </td>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="OutagePlan.PlannedOutage">PlannedOutage</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#PlannedOutage">PlannedOutage</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">The outage resulting from the execution of the outage plan.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="PlannedOutage" class="group">
+         <a href="#PlannedOutage">
+            <h2 class="concrete">PlannedOutage</h2>
+         </a>
+         <p class="package">Operations</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="PlannedOutage.actualPeriod">actualPeriod</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#DateTimeInterval">DateTimeInterval</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Actual outage period; end of the period corresponds to the actual restoration time.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="PlannedOutage.Equipments">Equipments</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Equipment">Equipment</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All equipments associated with this outage.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="PlannedOutage.estimatedPeriod">estimatedPeriod</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#DateTimeInterval">DateTimeInterval</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Estimated outage period for a planned outage. The start of the period is the start of the planned outage and the end of the period corresponds to the end of the planned outage.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="PlannedOutage.OutageArea">OutageArea</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#OutageArea">OutageArea</a>
+                  </p>
+               </td>
+               <td/>
+            </tr>
+         </table>
+      </div>
+      <div id="Reading" class="group">
+         <a href="#Reading">
+            <h2 class="concrete">Reading</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Specific value measured by a meter or other asset, or calculated by a system. Each Reading is associated with a specific ReadingType.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.reportedDateTime">reportedDateTime</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">(used only when there are detailed auditing requirements) Date and time at which the reading was first delivered to the metering system.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.source">source</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">System that originally supplied the reading (e.g., customer, AMI system, handheld reading system, another enterprise system, etc.).</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.timeStamp">timeStamp</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">dateTime</p>
+               </td>
+               <td>
+                  <p class="comment">The time when the value was last updated.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.value">value</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Value of this reading.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.valueMissing">valueMissing</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">boolean</p>
+               </td>
+               <td>
+                  <p class="comment">The indication of whether or not the quantity of this reading is missing.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="Reading.ReadingType">ReadingType</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#ReadingType">ReadingType</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Type information for this reading value.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="UsagePoint" class="group">
+         <a href="#UsagePoint">
+            <h2 class="concrete">UsagePoint</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Logical or physical point in the network to which readings or events may be attributed. Used at the place where a physical or virtual meter may be located; however, it is not required that a meter be present.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="UsagePoint.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="UsagePoint.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="UsagePoint.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <h1>Abstract Classes</h1>
+      <div id="MeterReading" class="group">
+         <a href="#MeterReading">
+            <h2 class="abstract">MeterReading</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Set of values obtained from the meter.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="MeterReading.mRID">mRID</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.</p>
+                  <p class="comment">For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="MeterReading.description">description</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="MeterReading.name">name</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">string</p>
+               </td>
+               <td>
+                  <p class="comment">NOTE: Pat inadvertently deleted and then recreated this attribute.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name" id="MeterReading.Readings">Readings</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..<item>*</item>
+                  </p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#Reading">Reading</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">All reading values contained within this meter reading.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <div id="ReadingType" class="group">
+         <a href="#ReadingType">
+            <h2 class="abstract">ReadingType</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Detailed description for a type of a reading value. Values in attributes allow for the creation of recommended codes to be used for identifying reading value types as follows: &lt;macroPeriod&gt;.&lt;aggregate&gt;.&lt;measuringPeriod&gt;.&lt;accumulation&gt;.&lt;flowDirection&gt;.&lt;commodity&gt;.&lt;measurementKind&gt;.&lt;interharmonic.numerator&gt;.&lt;interharmonic.denominator&gt;.&lt;argument.numerator&gt;.&lt;argument.denominator&gt;.&lt;tou&gt;.&lt;cpp&gt;.&lt;consumptionTier&gt;.&lt;phases&gt;.&lt;multiplier&gt;.&lt;unit&gt;.&lt;currency&gt;.</p>
+         <h3>Native Members</h3>
+         <table>
+            <tr>
+               <th>
+                  <p class="name" id="ReadingType.measurementKind">measurementKind</p>
+               </th>
+               <td>
+                  <p class="cardinality">1..1</p>
+               </td>
+               <td class="type">
+                  <p class="type">
+                     <a href="#MeasurementKind">MeasurementKind</a>
+                  </p>
+               </td>
+               <td>
+                  <p class="comment">Identifies "what" is being measured, as refinement of 'commodity'. When combined with 'unit', it provides detail to the unit of measure. For example, 'energy' with a unit of measure of 'kWh' indicates to the user that active energy is being measured, while with 'kVAh' or 'kVArh', it indicates apparent energy and reactive energy, respectively. 'power' can be combined in a similar way with various power units of measure: Distortion power ('distortionVoltAmperes') with 'kVA' is different from 'power' with 'kVA'.</p>
+               </td>
+            </tr>
+         </table>
+      </div>
+      <h1>Enumerations</h1>
+      <div id="MeasurementKind" class="group">
+         <a href="#MeasurementKind">
+            <h2 class="enumerated">MeasurementKind</h2>
+         </a>
+         <p class="package">Metering</p>
+         <p class="comment">Kind of read / measured value.</p>
+         <table>
+            <tr>
+               <th>
+                  <p class="name">alarm</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">apTitle</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">apparentPowerFactor</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">applicationContext</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">assetNumber</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">audibleVolume</p>
+               </th>
+               <td>
+                  <p class="comment">Sound</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">bandwidth</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">batteryCarryover</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">batteryVoltage</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">billCarryover</p>
+               </th>
+               <td>
+                  <p class="comment">Customer�s bill for the (Currency)</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">billLastPeriod</p>
+               </th>
+               <td>
+                  <p class="comment">Customer�s bill for the previous billing period (Currency)</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">billToDate</p>
+               </th>
+               <td>
+                  <p class="comment">Customer�s bill, as known thus far within the present billing period (Currency)</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">broadcastAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">connectionFee</p>
+               </th>
+               <td>
+                  <p class="comment">Monthly fee for connection to commodity.</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">currency</p>
+               </th>
+               <td>
+                  <p class="comment">funds</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">current</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">currentAngle</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">currentImbalance</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">dataOverflowAlarm</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">date</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">demand</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">demandLimit</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">demandReset</p>
+               </th>
+               <td>
+                  <p class="comment">Usually expressed as a count as part of a billing cycle</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">deviceAddressType1</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">deviceAddressType2</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">deviceAddressType3</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">deviceAddressType4</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">deviceClass</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">diagnostic</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">distance</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">distortionPowerFactor</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">distortionVoltAmp</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">electronicSerialNumber</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">emergencyLimit</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">encoderTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">endDeviceID</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">energization</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">energizationLoadSide</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">energy</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">fan</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">frequency</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">frequencyExcursion</p>
+               </th>
+               <td>
+                  <p class="comment">Usually expressed as a �count�</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">fund</p>
+               </th>
+               <td>
+                  <p class="comment">Dup with �currency�</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">groupAddressType1</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">groupAddressType2</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">groupAddressType3</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">groupAddressType4</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366ASAI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366ASIDI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366ASIFI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366CAIDI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366CAIFI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366CEMIn</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366CEMSMIn</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366CTAIDI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366MAIFI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366MAIFIe</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366MomentaryInterruption</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366MomentaryInterruptionEvent</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366SAIDI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366SAIFI</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ieee1366SustainedInterruption</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">interruptionBehaviour</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">inversionTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">ipAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">lineLoss</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">loadInterrupt</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">loadShed</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">loss</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">macAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">maintenance</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">mfgAssignedConfigurationID</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">mfgAssignedPhysicalSerialNumber</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">mfgAssignedProductNumber</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">mfgAssignedUniqueCommunicationAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">multiCastAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">negativeSequence</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">none</p>
+               </th>
+               <td>
+                  <p class="comment">Not Applicable</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">oneWayAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">phasorPowerFactor</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">phasorReactivePower</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">physicalTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">positiveSequence</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">power</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">powerFactor</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">powerLossTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">powerOutage</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">powerQuality</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">powerRestoration</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">programmed</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">pushbutton</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">quantityPower</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">relayActivation</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">relayCycle</p>
+               </th>
+               <td>
+                  <p class="comment">Usually expressed as a count</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">removalTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">reprogrammingTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">reverseRotationTamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">sag</p>
+               </th>
+               <td>
+                  <p class="comment">or Voltage Dip</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">signalStrength</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">signaltoNoiseRatio</p>
+               </th>
+               <td>
+                  <p class="comment">Moved here from Attribute #9 UOM</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">swell</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">switchArmed</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">switchDisabled</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">switchPosition</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">tamper</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">tapPosition</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">tariffRate</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">temperature</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">totalHarmonicDistortion</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">transformerLoss</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">twoWayAddress</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">unipedeVoltageDip10to15</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">unipedeVoltageDip15to30</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">unipedeVoltageDip30to60</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">unipedeVoltageDip60to90</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">unipedeVoltageDip90to100</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">voltage</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">voltageAngle</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">voltageExcursion</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">voltageImbalance</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">volume</p>
+               </th>
+               <td>
+                  <p class="comment">Clarified  from Ed. 1. to indicate fluid volume</p>
+               </td>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">volumetricFlow</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">watchdogTimeout</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">zeroFlowDuration</p>
+               </th>
+               <td/>
+            </tr>
+            <tr>
+               <th>
+                  <p class="name">zeroSequence</p>
+               </th>
+               <td/>
+            </tr>
+         </table>
+      </div>
+      <h1>Compound Types</h1>
+      <h1>Datatypes</h1>
+   </body>
+</html>

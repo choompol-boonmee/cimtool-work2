@@ -1,0 +1,312 @@
+!SESSION 2023-10-28 00:32:21.431 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:34:04.749
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2023-10-28 00:34:30.042 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:35:03.884
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2023-10-28 00:36:59.285 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:37:08.523
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:37:08.844
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:37:30.776
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2023-10-28 00:38:26.276 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:38:36.669
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:38:37.102
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:39:56.703
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2023-10-28 00:40:58.217 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:41:07.771
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2023-10-28 00:41:08.304
+!MESSAGE An internal error occurred during: "Parsing Schema".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:94)
+	at au.com.langdale.cimtoole.project.Info.getProperty(Info.java:514)
+	at au.com.langdale.cimtoole.project.Task.interpretSchema(Task.java:325)
+	at au.com.langdale.cimtoole.project.Task.parseEAP(Task.java:321)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:252)
+	at au.com.langdale.cimtoole.project.Cache$ParseWorker.build(Cache.java:234)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2344)
+	at au.com.langdale.util.Jobs.runWait(Jobs.java:52)
+	at au.com.langdale.cimtoole.project.Cache.getCachedWait(Cache.java:172)
+	at au.com.langdale.cimtoole.project.Cache.getOntologyWait(Cache.java:107)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.visit(Cache.java:273)
+	at org.eclipse.core.internal.resources.Resource$2.visit(Resource.java:106)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:65)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:82)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:86)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:127)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:75)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:104)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:88)
+	at au.com.langdale.cimtoole.project.Cache$DynamicMergedModel.<init>(Cache.java:264)
+	at au.com.langdale.cimtoole.project.Cache$MergeWorker.build(Cache.java:245)
+	at au.com.langdale.cimtoole.project.Cache$CacheWorker.run(Cache.java:213)
+	at au.com.langdale.util.Jobs$1.run(Jobs.java:36)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: org.eclipse.core.runtime.CoreException: Can't parse model file .cimtool-settings
+	at au.com.langdale.cimtoole.project.Info.error(Info.java:556)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:361)
+	at au.com.langdale.cimtoole.project.Task.parse(Task.java:270)
+	at au.com.langdale.cimtoole.project.Settings.getSettingsStore(Settings.java:123)
+	at au.com.langdale.cimtoole.project.Settings.getSetting(Settings.java:92)
+	... 24 more
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/oms-proj/.cimtool-settings'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:793)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:289)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:278)
+	at au.com.langdale.cimtoole.project.Task.parseOWL(Task.java:359)
+	... 27 more
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:41:16.241
+!MESSAGE Invalid preference page path: XML Syntax
+!SESSION 2023-10-28 00:43:42.017 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_372
+java.vendor=Azul Systems, Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -consoleLog
+
+!ENTRY org.eclipse.ui 4 4 2023-10-28 00:43:53.344
+!MESSAGE Invalid preference page path: XML Syntax

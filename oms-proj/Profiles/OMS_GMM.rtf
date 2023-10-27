@@ -1,0 +1,2720 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033\deflangfe1033\fs20{\fonttbl{\f0\fswiss\fprq2\fcharset0 Arial;}{\f1\fswiss\fprq2\fcharset0{\*\fname Arial;}Arial CE;}
+{\f23\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Arial;}}{\colortbl;\red0\green0\blue238;}
+\pard\plain \sb120\qj\fs20\lang1033
+{\par\b\fs28OMS_GMM Profile\par}Profile namespace:  http://pea.co.th/cimpf/OMS_GMM/2023# 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs28 Concrete Classes \par}
+
+{\par\b\fs24 {\*\bkmkstart ACLineSegment}ACLineSegment}{\fs24 {\*\bkmkend ACLineSegment}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A wire or combination of wires, with consistent electrical characteristics, building a single electrical system, used to carry alternating current between points in the power system.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 For symmetrical, transposed three phase lines, it is sufficient to use attributes of the line segment, which describe impedances and admittances for the entire length of the segment.  Additionally impedances can be computed by using length and associated per length impedances.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 The BaseVoltage at the two ends of ACLineSegments in a Line shall have the same BaseVoltage.nominalVoltage. However, boundary lines may have slightly different BaseVoltage.nominalVoltages and variation is allowed. Larger voltage difference in general requires use of an equivalent branch.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 length \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Length"}}{\fldrslt {\fs16\ul\cf1 Length}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Segment length for calculating line section capabilities.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 PerLengthImpedance \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PerLengthImpedance"}}{\fldrslt {\fs16\ul\cf1 PerLengthImpedance}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Per-length impedance of this line segment.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Breaker}Breaker}{\fs24 {\*\bkmkend Breaker}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A mechanical switching device capable of making, carrying, and breaking currents under normal circuit conditions and also making, carrying for a specified time, and breaking currents under specified abnormal circuit conditions e.g.  those of short circuit.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 normalOpen \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 open \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute tells if the switch is considered open when used as input to topology processing.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart BusbarSection}BusbarSection}{\fs24 {\*\bkmkend BusbarSection}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A conductor, or group of conductors, with negligible impedance, that serve to connect other conducting equipment within a single substation.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 Voltage measurements are typically obtained from voltage transformers that are connected to busbar sections. A bus bar section may have many physical terminals but for analysis is modelled with exactly one logical terminal.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart ConnectivityNode}ConnectivityNode}{\fs24 {\*\bkmkend ConnectivityNode}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Connectivity nodes are points where terminals of AC conducting equipment are connected together with zero impedance.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Disconnector}Disconnector}{\fs24 {\*\bkmkend Disconnector}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A manually operated or motor operated mechanical switching device used for changing the connections in a circuit, or for isolating a circuit or equipment from a source of power. It is required to open or close circuits when negligible current is broken or made.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 normalOpen \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 open \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute tells if the switch is considered open when used as input to topology processing.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 normalOpen \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 open \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..unbounded \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Switch"}}{\fldrslt {\fs16\ul\cf1 Switch}}} \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart EnergyConsumer}EnergyConsumer}{\fs24 {\*\bkmkend EnergyConsumer}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Generic user of energy - a  point of consumption on the power system model.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 EnergyConsumer.pfixed, .qfixed, .pfixedPct and .qfixedPct have meaning only if there is no LoadResponseCharacteristic associated with EnergyConsumer or if LoadResponseCharacteristic.exponentModel is set to False.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart EnergySource}EnergySource}{\fs24 {\*\bkmkend EnergySource}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A generic equivalent for an energy supplier on a transmission or distribution voltage level.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 nominalVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Voltage"}}{\fldrslt {\fs16\ul\cf1 Voltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Phase-to-phase nominal voltage.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Feeder}Feeder}{\fs24 {\*\bkmkend Feeder}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A collection of equipment for organizational purposes, used for grouping distribution resources.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 The organization a feeder does not necessarily reflect connectivity or current operation state.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Equipments \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Equipment"}}{\fldrslt {\fs16\ul\cf1 Equipment}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Contained equipment.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart LoadBreakSwitch}LoadBreakSwitch}{\fs24 {\*\bkmkend LoadBreakSwitch}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A mechanical switching device capable of making, carrying, and breaking currents under normal operating conditions.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 normalOpen \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 open \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute tells if the switch is considered open when used as input to topology processing.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Meter}Meter}{\fs24 {\*\bkmkend Meter}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Physical asset that performs the metering role of the usage point. Used for measuring consumption and detection of events.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 UsagePoint \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "UsagePoint"}}{\fldrslt {\fs16\ul\cf1 UsagePoint}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Usage point to which this end device belongs.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart PerLengthSequenceImpedance}PerLengthSequenceImpedance}{\fs24 {\*\bkmkend PerLengthSequenceImpedance}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Sequence impedance and admittance parameters per unit length, for transposed lines of 1, 2, or 3 phases. For 1-phase lines, define x=x0=xself. For 2-phase lines, define x=xs-xm and x0=xs+xm.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 b0ch \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "SusceptancePerLength"}}{\fldrslt {\fs16\ul\cf1 SusceptancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Zero sequence shunt (charging) susceptance, per unit of length.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 bch \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "SusceptancePerLength"}}{\fldrslt {\fs16\ul\cf1 SusceptancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Positive sequence shunt (charging) susceptance, per unit of length.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 r \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ResistancePerLength"}}{\fldrslt {\fs16\ul\cf1 ResistancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Positive sequence series resistance, per unit of length.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 r0 \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ResistancePerLength"}}{\fldrslt {\fs16\ul\cf1 ResistancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Zero sequence series resistance, per unit of length.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 x \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ReactancePerLength"}}{\fldrslt {\fs16\ul\cf1 ReactancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Positive sequence series reactance, per unit of length.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 x0 \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ReactancePerLength"}}{\fldrslt {\fs16\ul\cf1 ReactancePerLength}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Zero sequence series reactance, per unit of length.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart PowerTransformer}PowerTransformer}{\fs24 {\*\bkmkend PowerTransformer}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 An electrical device consisting of  two or more coupled windings, with or without a magnetic core, for introducing mutual coupling between electric circuits. Transformers can be used to control voltage and phase shift (active power flow).}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 A power transformer may be composed of separate transformer tanks that need not be identical.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 A power transformer can be modelled with or without tanks and is intended for use in both balanced and unbalanced representations.   A power transformer typically has two terminals, but may have one (grounding), three or more terminals.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 The inherited association ConductingEquipment.BaseVoltage should not be used.  The association from TransformerEnd to BaseVoltage should be used instead.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 PowerTransformerEnd \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "PowerTransformerEnd"}}{\fldrslt {\fs16\ul\cf1 PowerTransformerEnd}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The ends of this power transformer.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart PowerTransformerEnd}PowerTransformerEnd}{\fs24 {\*\bkmkend PowerTransformerEnd}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A PowerTransformerEnd is associated with each Terminal of a PowerTransformer.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 The impedance values r, r0, x, and x0 of a PowerTransformerEnd represents a star equivalent as follows.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 1) for a two Terminal PowerTransformer the high voltage (TransformerEnd.endNumber=1) PowerTransformerEnd has non zero values on r, r0, x, and x0 while the low voltage (TransformerEnd.endNumber=2) PowerTransformerEnd has zero values for r, r0, x, and x0.  Parameters are always provided, even if the PowerTransformerEnds have the same rated voltage.  In this case, the parameters are provided at the PowerTransformerEnd which has TransformerEnd.endNumber equal to 1.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 2) for a three Terminal PowerTransformer the three PowerTransformerEnds represent a star equivalent with each leg in the star represented by r, r0, x, and x0 values.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 3) For a three Terminal transformer each PowerTransformerEnd shall have g, g0, b and b0 values corresponding to the no load losses distributed on the three PowerTransformerEnds. The total no load loss shunt impedances may also be placed at one of the PowerTransformerEnds, preferably the end numbered 1, having the shunt values on end 1.  This is the preferred way.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 4) for a PowerTransformer with more than three Terminals the PowerTransformerEnd impedance values cannot be used. Instead use the TransformerMeshImpedance or split the transformer into multiple PowerTransformers.}
+
+{\par\pard\plain \sb120\qj\fs20\lang1033 Each PowerTransformerEnd must be contained by a PowerTransformer. Because a PowerTransformerEnd (or any other object) can not be contained by more than one parent, a PowerTransformerEnd can not have an association to an EquipmentContainer (Substation, VoltageLevel, etc).}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of the transformer end.  This is essential for PU calculation.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminal \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Terminal of the power transformer to which this transformer end belongs.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Recloser}Recloser}{\fs24 {\*\bkmkend Recloser}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Pole-mounted fault interrupter with built-in phase and ground relays, current transformer (CT), and supplemental controls.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart RegulatingCondEq}RegulatingCondEq}{\fs24 {\*\bkmkend RegulatingCondEq}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A type of conducting equipment that can regulate a quantity (i.e. voltage or flow) at a specific point in the network.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart ServiceLocation}ServiceLocation}{\fs24 {\*\bkmkend ServiceLocation}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A real estate location, commonly referred to as premises.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 description \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The description is a free human readable text describing or naming the object. It may be non unique and may not correlate to a naming hierarchy.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 EndDevices \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "EndDevice"}}{\fldrslt {\fs16\ul\cf1 EndDevice}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All end devices that measure the service delivered to this service location.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 UsagePoints \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "UsagePoint"}}{\fldrslt {\fs16\ul\cf1 UsagePoint}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All usage points delivering service (of the same type) to this service location.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart ShuntCompensator}ShuntCompensator}{\fs24 {\*\bkmkend ShuntCompensator}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A shunt capacitor or reactor or switchable bank of shunt capacitors or reactors. A section of a shunt compensator is an individual capacitor or reactor. A negative value for bPerSection indicates that the compensator is a reactor. ShuntCompensator is a single terminal device.  Ground is implied.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+{\par\b\fs20 Inherited Members\par}\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "RegulatingCondEq"}}{\fldrslt {\fs16\ul\cf1 RegulatingCondEq}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "RegulatingCondEq"}}{\fldrslt {\fs16\ul\cf1 RegulatingCondEq}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "RegulatingCondEq"}}{\fldrslt {\fs16\ul\cf1 RegulatingCondEq}}} \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..unbounded \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 see {\field{\*\fldinst {\fs16 HYPERLINK  \\l "RegulatingCondEq"}}{\fldrslt {\fs16\ul\cf1 RegulatingCondEq}}} \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Substation}Substation}{\fs24 {\*\bkmkend Substation}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A collection of equipment for purposes other than generation or utilization, through which electric energy in bulk is passed for the purposes of switching or modifying its characteristics.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Equipments \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Equipment"}}{\fldrslt {\fs16\ul\cf1 Equipment}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Contained equipment.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Switch}Switch}{\fs24 {\*\bkmkend Switch}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 A generic device designed to close, or open, or both, one or more electric circuits.  All switches are two terminal devices including grounding switches. The ACDCTerminal.connected at the two sides of the switch shall not be considered for assessing switch connectivity, i.e. only Switch.open, .normalOpen and .locked are relevant.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 normalOpen \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute is used in cases when no Measurement for the status value is present. If the Switch has a status measurement the Discrete.normalValue is expected to match with the Switch.normalOpen.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 open \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 boolean \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The attribute tells if the switch is considered open when used as input to topology processing.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 BaseVoltage \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "BaseVoltage"}}{\fldrslt {\fs16\ul\cf1 BaseVoltage}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Base voltage of this conducting equipment.  Use only when there is no voltage level container used and only one base voltage applies.  For example, not used for transformers.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Terminals \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Terminal"}}{\fldrslt {\fs16\ul\cf1 Terminal}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Conducting equipment have terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart Terminal}Terminal}{\fs24 {\*\bkmkend Terminal}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 An AC electrical connection point to a piece of conducting equipment. Terminals are connected at physical connection points called connectivity nodes.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 ConductingEquipment \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ConductingEquipment"}}{\fldrslt {\fs16\ul\cf1 ConductingEquipment}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The conducting equipment of the terminal.  Conducting equipment have  terminals that may be connected to other conducting equipment terminals via connectivity nodes or topological nodes.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 ConnectivityNode \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "ConnectivityNode"}}{\fldrslt {\fs16\ul\cf1 ConnectivityNode}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 The connectivity node to which this terminal connects with zero impedance.}
+ \cell}
+\row
+}
+
+{\par\b\fs24 {\*\bkmkstart UsagePoint}UsagePoint}{\fs24 {\*\bkmkend UsagePoint}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Logical or physical point in the network to which readings or events may be attributed. Used at the place where a physical or virtual meter may be located; however, it is not required that a meter be present.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 EndDevices \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Meter"}}{\fldrslt {\fs16\ul\cf1 Meter}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All end devices at this usage point.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 Equipments \cell}
+{\pard \intbl \sb120\sa120\fs16 1..*  \cell}
+{\pard \intbl \sb120\sa120\fs16 {\field{\*\fldinst {\fs16 HYPERLINK  \\l "Equipment"}}{\fldrslt {\fs16\ul\cf1 Equipment}}} \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 All equipment connecting this usage point to the electrical grid.}
+ \cell}
+\row
+}
+
+{\par\b\fs28 Abstract Classes \par}
+
+{\par\b\fs24 {\*\bkmkstart BaseVoltage}BaseVoltage}{\fs32 {\*\bkmkend BaseVoltage}}
+{\par\pard\plain \sb120\qj\fs20\lang1033 Defines a system base voltage which is referenced.}
+
+\par\pard\plain \sb120\qj\fs20\lang1033 
+{\par\b\fs20 Native Members\par}
+\par
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16\qc\b name \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b mult \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b type \cell}
+{\pard \intbl \sb120\sa120\fs16\qc\b description \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 mRID \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 Master resource identifier issued by a model authority. The mRID is unique within an exchange context. Global uniqueness is easily achieved by using a UUID, as specified in RFC 4122, for the mRID. The use of UUID is strongly recommended.}
+
+{\sb120\sa120 For CIMXML data files in RDF syntax conforming to IEC 61970-552, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.}
+ \cell}
+\row
+}
+
+{
+\trowd \trgaph70 
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2000
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx2720
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx4125
+\clbrdrt\brdrs\clbrdrl\brdrs\clbrdrb\brdrs\clbrdrr\brdrs
+\cellx9500
+{\pard \intbl \sb120\sa120\fs16 name \cell}
+{\pard \intbl \sb120\sa120\fs16 1..1 \cell}
+{\pard \intbl \sb120\sa120\fs16 string \cell}
+{\pard \intbl \sb120\sa120\fs16 
+{\sb120\sa120 NOTE: Pat inadvertently deleted and then recreated this attribute.}
+ \cell}
+\row
+}
+
+{\par\b\fs28 Datatypes \par}
+
+{\par\b\fs24 {\*\bkmkstart Length}Length}{\fs32 {\*\bkmkend Length} \par}
+Unit of length. It shall be a positive value or zero.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart ReactancePerLength}ReactancePerLength}{\fs32 {\*\bkmkend ReactancePerLength} \par}
+Reactance (imaginary part of impedance) per unit of length, at rated frequency.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart ResistancePerLength}ResistancePerLength}{\fs32 {\*\bkmkend ResistancePerLength} \par}
+Resistance (real part of impedance) per unit of length.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart SusceptancePerLength}SusceptancePerLength}{\fs32 {\*\bkmkend SusceptancePerLength} \par}
+Imaginary part of admittance per unit of length.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+{\par\b\fs24 {\*\bkmkstart Voltage}Voltage}{\fs32 {\*\bkmkend Voltage} \par}
+Electrical voltage, can be both AC and DC.
+\par\pard\plain \sb120\qj\fs20\lang1033 XSD type: float 
+\par\pard\plain \sb120\qj\fs20\lang1033 
+
+\par}}}}}}}}
